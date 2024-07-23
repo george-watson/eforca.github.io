@@ -1,18 +1,135 @@
 <!DOCTYPE html>
 <html>
-<style>
-  body {
-    background-image: url('img/icdiwabh.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-</style>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/scene2.js" async></script>
+  <style>
+    body {
+      background-image: url('img/icdiwabh.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    #info {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      /* background-color: red; */
+
+      font-size: 250%;
+      font-family: cursive;
+    }
+
+    #center-div {
+      width: 440px;
+      height: 330px;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      margin: auto;
+    }
+
+    #eras-buttons {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .era-btn {
+      display: block;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin: 5px;
+    }
+
+    .era-btn:hover {
+      background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+    }
+
+    .era-btn:active {
+      background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+    }
+
+    #debut {
+      background-color: #B4CCAB
+    }
+
+    #fearless {
+      background-color: #EFC37E
+    }
+
+    #speaknow {
+      background-color: #CAACC7
+    }
+
+    #red {
+      background-color: #7C3D46
+    }
+
+    #c1989 {
+      background-color: #B8E3EF
+    }
+
+    #reputation {
+      background-color: #857C7C
+    }
+
+    #lover {
+      background-color: #EAA6BC
+    }
+
+    #folklore {
+      background-color: #CDC7BC
+    }
+
+    #evermore {
+      background-color: #C4AD8F
+    }
+
+    #midnights {
+      background-color: #373948
+    }
+
+    #ttpd {
+      background-color: #1C160F
+    }
+  </style>
+</head>
 
 <body>
+  <div id="info">
+    <h1 class="hidden" id="nope">Nope!</h1>
+    <a href="#" style="text-decoration: none; color: black;">
+      <h1 class="hidden" id="yay">Yaaay!</h1>
+    </a>
+  </div>
+  <div id="center-div">
+    <div id="eras-buttons">
+      <a class="era-btn" id="debut" href="#"></a>
+      <a class="era-btn" id="fearless" href="#"></a>
+      <a class="era-btn" id="speaknow" href="#"></a>
+      <a class="era-btn" id="red" href="#"></a>
+      <a class="era-btn" id="c1989" href="#"></a>
+      <a class="era-btn" id="reputation" href="#"></a>
+      <a class="era-btn" id="lover" href="#"></a>
+      <a class="era-btn" id="folklore" href="#"></a>
+      <a class="era-btn" id="evermore" href="#"></a>
+      <a class="era-btn" id="midnights" href="#"></a>
+      <a class="era-btn" id="ttpd" href="#"></a>
+    </div>
+  </div>
 
-  <h1>Coucou</h1>
-  <p>Pouet</p>
+
 
 </body>
 
