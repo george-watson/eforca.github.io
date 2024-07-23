@@ -1,18 +1,106 @@
 <!DOCTYPE html>
 <html>
-<style>
-  body {
-    background-image: url('img/bracelets.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-</style>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/levenshtein.js" async></script>
+  <script src="js/scene1.js" async></script>
+  <style>
+    body {
+      background-image: url('img/bracelets.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    #main-div {
+      display: flex;
+      flex-direction: row;
+      font-family: droid sans mono, consolas, monospace;
+    }
+
+    .rowDiv {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .form__group {
+      position: relative;
+      padding: 15px 0 0;
+      margin-top: 10px;
+      width: 500px;
+    }
+
+    .form__field {
+      width: 500px;
+      border: 0;
+      border-bottom: 2px solid pink;
+      outline: 0;
+      font-size: 1.3rem;
+      color: #dcfbf8;
+      padding: 0px 0;
+      background: transparent;
+    }
+
+    .colDiv img {
+      width: 120px;
+    }
+
+    #successDiv {
+      text-align: center;
+    }
+
+    #successDiv img {
+      width: 80%;
+      min-width: 380px;
+      margin: auto;
+    }
+  </style>
+</head>
 
 <body>
 
-  <h1>Coucou</h1>
-  <p>Pouet</p>
+  <div id="main-div">
+
+    <div class="colDiv">
+      <div class="rowDiv">
+        <div class="form__group">
+          <h1>TIWWCHNT</h1>
+          <input type="input" class="form__field" id='nice-ans' />
+        </div>
+        <img id="nice-yay" src="img/taytay-thumbs-up-2.png" class="hidden">
+      </div>
+
+      <div class="rowDiv">
+        <div class="form__group">
+          <h1>AIJLOOOOOOOOOO</h1>
+          <input type="input" class="form__field" id='ohoh-ans' />
+        </div>
+        <img id="ohoh-yay" src="img/taytay-thumbs-up-2.png" class="hidden">
+      </div>
+
+      <div class="rowDiv">
+        <div class="form__group">
+          <h1>RIPMRMIDD</h1>
+          <input type="input" class="form__field" id='rip-ans' />
+        </div>
+        <img id="rip-yay" src="img/taytay-thumbs-up-2.png" class="hidden">
+      </div>
+    </div>
+
+    <div id="successDiv">
+      <a href="scene2.html">
+        <img id="success-taytay" src="img/taytay-thumbs-up-2.png" class="hidden">
+      </a>
+    </div>
+
+  </div>
+
 
 </body>
 
