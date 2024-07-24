@@ -1,18 +1,114 @@
 <!DOCTYPE html>
 <html>
-<style>
-  body {
-    background-image: url('img/taylor-singing.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-</style>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/scene5.js" async></script>
+  <style>
+    body {
+      background-image: url('img/taytay-singing-2.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .rowDiv {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 5%;
+      height: 120px;
+    }
+
+    button {
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+      outline: none;
+    }
+
+    .megaphone {
+      width: 120px;
+    }
+
+    .form__field {
+      width: 500px;
+      border: 0;
+      align-self: flex-end;
+      border-bottom: 2px solid #AB60C9;
+      outline: 0;
+      font-size: 1.3rem;
+      color: #F5D4DB;
+      padding: 10px 0;
+      margin-left: 10px;
+      margin-bottom: 30px;
+      background: transparent;
+    }
+
+    .yay {
+      width: 60px;
+      margin-left: 10px;
+      margin-bottom: 30px;
+    }
+
+    #successDiv {
+      position: absolute;
+      left: 60%;
+      bottom: 0;
+    }
+
+    #successDiv img {
+      width: 75%;
+      display: block;
+      float: right;
+    }
+  </style>
+</head>
 
 <body>
+  <div id="successDiv">
+    <a href="finale.html">
+      <img id="success-taytay" src="img/taytay-fireworks.jpg" class="hidden">
+    </a>
+  </div>
+  <div class="rowDiv">
+    <button id="bejeweled-btn">
+      <img class="megaphone" src="img/taytay-megaphone.png">
+    </button>
+    <input type="input" class="form__field" id='bejeweled-ans' />
+    <img id="bejeweled-yay" class="yay hidden" src="img/taytay-shoes.png">
 
-  <h1>Coucou</h1>
-  <p>Pouet</p>
+  </div>
+  <div class="rowDiv">
+    <button id="space-btn">
+      <img class="megaphone" src="img/taytay-megaphone.png">
+    </button>
+    <input type="input" class="form__field" id='space-ans' />
+    <img id="space-yay" class="yay hidden" src="img/taytay-shoes.png">
+  </div>
+  <div class="rowDiv">
+    <button id="betty-btn">
+      <img class="megaphone" src="img/taytay-megaphone.png">
+    </button>
+    <input type="input" class="form__field" id='betty-ans' />
+    <img id="betty-yay" class="yay hidden" src="img/taytay-shoes.png">
+  </div>
+
+
+  <audio id="space-audio">
+    <source src="mp3/blank-space-cut.m4a" type="audio/mpeg">
+  </audio>
+  <audio id="betty-audio">
+    <source src="mp3/betty-cut.m4a" type="audio/mpeg">
+  </audio>
+  <audio id="bejeweled-audio">
+    <source src="mp3/bejeweled-cut.m4a" type="audio/mpeg">
+  </audio>
 
 </body>
 
