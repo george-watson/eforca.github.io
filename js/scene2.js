@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
 
     var sequence = ['debut', 'fearless', 'speaknow', 'red', 'c1989', 'reputation',

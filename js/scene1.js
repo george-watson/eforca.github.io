@@ -56,7 +56,7 @@ $(document).ready(function () {
             }
         } else {
             $('#rip-yay').addClass("hidden");
-            successTracker['false'] = true;
+            successTracker['rip'] = true;
         }
     })
 
