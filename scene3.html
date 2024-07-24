@@ -1,18 +1,102 @@
 <!DOCTYPE html>
 <html>
-<style>
-  body {
-    background-image: url('img/taylor-math.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-</style>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/scene3.js" async></script>
+  <style>
+    body {
+      background-image: url('img/taylor-math.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+
+      font-family: droid sans mono, consolas, monospace;
+      ;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .success {
+      color: white;
+    }
+
+    .rowDiv {
+      display: flex;
+      flex-direction: row;
+    }
+
+    input {
+      display: block;
+      margin: 1em auto;
+      border: none;
+      padding: 0;
+      background: repeating-linear-gradient(90deg,
+          white 0, white 1ch,
+          transparent 0, transparent 1.5ch) 0 100%/ 5.5ch 2px no-repeat;
+      font: 4ch droid sans mono, consolas, monospace;
+      letter-spacing: .5ch;
+      color: white;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    #calm-ans {
+      width: 1.5ch;
+    }
+
+    #would-ans {
+      width: 3ch;
+    }
+
+    #mine-ans {
+      width: 4.5ch;
+    }
+
+    #suburb-ans {
+      width: 6ch;
+    }
+
+    #successDiv {
+      position: absolute;
+      left: 25%;
+    }
+  </style>
+</head>
 
 <body>
 
-  <h1>Coucou</h1>
-  <p>Pouet</p>
+  <div id="successDiv">
+    <a href="scene4.html">
+      <img id="success-taytay" src="img/taytay-thumbs-up-3.png" class="hidden">
+    </a>
+  </div>
+
+  <div class="rowDiv">
+    <h1 id="calm-h1">You Need To Calm Down</h1>
+    <input id="calm-ans" maxlength='1' />
+  </div>
+  <div class="rowDiv">
+    <h1 id="would-h1">Would've, Could've, Should've</h1>
+    <input id="would-ans" maxlength='2' />
+  </div>
+  <div class="rowDiv">
+    <h1 id="mine-h1">Mine</h1>
+    <input id="mine-ans" maxlength='3' />
+  </div>
+  <div class="rowDiv">
+    <h1 id="suburb-h1">Suburban Legends</h1>
+    <input id="suburb-ans" maxlength='4' />
+  </div>
+
+
+
+
+
 
 </body>
 
