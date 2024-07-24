@@ -19,6 +19,10 @@ scene 3
 background : plein de chiffres ?
 trouver des nombres dans des chansons
 -> plusieurs codes à entrer, que des chiffres
+- You Need To Calm Down : 7
+- Would've, Could've, Should've : 19
+- Mine : 230
+- Suburban Legends : 1950
 
 scene 4
 background : all too well / c'est long
