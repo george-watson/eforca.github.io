@@ -1,19 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        body {
-          background-image: url('img/gouette.jpg');
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-size: cover;
-        }
-    </style> 
-<body>
 
-<h1>Coucou</h1>
-<p>Pouet</p>
+<head>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/scene4.js" async></script>
+  <style>
+    body {
+      background-image: url('img/taylor-minute.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    #info {
+      color: white;
+      margin: auto;
+
+      font-size: 250%;
+      font-family: cursive;
+    }
+
+    h1 {
+      margin-top: 50%;
+    }
+
+    #center-div {
+      width: 90%;
+      height: 90%;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      margin: auto;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    #eras-buttons {
+      align-self: flex-end;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .era-btn {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      margin: 5px;
+      border-color: transparent;
+    }
+
+    .era-btn:hover {
+      background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+    }
+
+    .era-btn:active {
+      background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+    }
+
+    #speaknow {
+      background-color: #CAACC7;
+    }
+
+    #red {
+      background-color: #7C3D46;
+      color: #eaeaea;
+    }
+
+    #folklore {
+      background-color: #CDC7BC;
+    }
+
+    #evermore {
+      background-color: #C4AD8F;
+    }
+
+    #midnights {
+      background-color: #373948;
+      color: #eaeaea;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="center-div">
+    <div id="info">
+      <h1 class="hidden" id="nope">Nope!</h1>
+      <a href="scene5.html" style="text-decoration: none; color: white;">
+        <h1 class="hidden" id="yay">Yaaay!</h1>
+      </a>
+    </div>
+    <div id="eras-buttons">
+      <button class="era-btn" id="speaknow">Enchanted</button>
+      <button class="era-btn" id="red">All Too Well (10 Minute Version)</button>
+      <button class="era-btn" id="folklore">the lakes</button>
+      <button class="era-btn" id="evermore">ivy</button>
+      <button class="era-btn" id="midnights">Glitch</button>
+    </div>
+  </div>
 
 </body>
-</html> 
 
-
+</html>
