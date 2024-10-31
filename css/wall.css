@@ -1,0 +1,92 @@
+:root {
+    --blue-font-colour: #acd8f7;
+    --blue-start-colour: #03356c;
+    --blue-end-colour: #002452;
+
+    --green-font-colour: #ace2d8;
+    --green-start-colour: #0e886f;
+    --green-end-colour: #1b5d62;
+
+    --red-font-colour: #e9bfd6;
+    --red-start-colour: #8a1d41;
+    --red-end-colour: #510d24;
+
+    --teal-font-colour: #bce8f1;
+    --teal-start-colour: #1a9fbc;
+    --teal-end-colour: #1181a4;
+
+    --tile-font-colour: var(--blue-font-colour);
+    --tile-start-colour: var(--blue-start-colour);
+    --tile-end-colour: var(--blue-end-colour);
+}
+
+#center-div {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background-image: url('../img/wall/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#wall {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 760px;
+    font-family: sans-serif;
+    font-size: 15pt;
+}
+
+.wall-btn {
+    width: 150px;
+    padding: 35px 15px;
+    margin: 5px;
+    border-radius: 3px;
+    display: flex;
+    color: #012c5d;
+    justify-content: center;
+    background-image: linear-gradient(#bae3f9, #a8d5fb);
+    text-transform: capitalize;
+}
+
+input:checked+.wall-btn {
+    color: var(--tile-font-colour);
+    background-image: linear-gradient(var(--tile-start-colour), var(--tile-end-colour));
+}
+
+.found-blue {
+    color: var(--blue-font-colour);
+    background-image: linear-gradient(var(--blue-start-colour), var(--blue-end-colour));
+}
+
+.found-green {
+    color: var(--green-font-colour);
+    background-image: linear-gradient(var(--green-start-colour), var(--green-end-colour));
+}
+
+.found-red {
+    color: var(--red-font-colour);
+    background-image: linear-gradient(var(--red-start-colour), var(--red-end-colour));
+}
+
+.found-teal {
+    color: var(--teal-font-colour);
+    background-image: linear-gradient(var(--teal-start-colour), var(--teal-end-colour));
+}
+
+label input {
+    position: absolute;
+    top: -20px;
+    visibility: hidden;
+}
