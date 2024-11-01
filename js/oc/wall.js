@@ -1,7 +1,7 @@
-const clickAudio = new Audio("mp3/wall/wallBtnClick.mp3")
-const incorrectAudio = new Audio("mp3/wall/incorrectGroup.mp3")
-const solveAudio = new Audio("mp3/wall/solveClue.mp3")
-const solveWallAudio = new Audio("mp3/wall/ocFlurry.mp3")
+const clickAudio = new Audio("audio/oc/wallBtnClick.mp3")
+const incorrectAudio = new Audio("audio/oc/incorrectGroup.mp3")
+const solveAudio = new Audio("audio/oc/solveClue.mp3")
+const solveWallAudio = new Audio("audio/oc/ocFlurry.mp3")
 
 const tile_colours = ['blue', 'green', 'red', 'teal']
 
