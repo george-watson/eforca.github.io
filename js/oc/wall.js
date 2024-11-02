@@ -1,7 +1,7 @@
 const clickAudio = new Audio("audio/oc/wallBtnClick.mp3")
 const incorrectAudio = new Audio("audio/oc/incorrectGroup.mp3")
 const solveAudio = new Audio("audio/oc/solveClue.mp3")
-const solveWallAudio = new Audio("audio/oc/ocFlurry.mp3")
+const solveWallAudio = new Audio("audio/oc/you-solved-the-wall.mp3")
 
 const tile_colours = ['blue', 'green', 'red', 'teal']
 
@@ -15,6 +15,8 @@ const rows = [
 
 var n_checked = 0;
 var n_found = 0;
+
+$("#continue").hide();
 
 for (let i = 0; i < wall.length; i++) {
     $("#wall").append('<div class="tileDiv" id="tile' + i + '"><label id="label-' + wall[i] + '"><input id = "' + wall[i] + '" type = "checkbox" value = "1" /><span class="wall-btn">' + wall[i] + '</span></label></div>');
@@ -51,6 +53,10 @@ $('.wall-btn').on('click', function () {
                     console.log("pouet");
                     $(".wall-btn:not(.found)").addClass("found found-teal");
                     solveWallAudio.play();
+
+                    sleep(5000).then(() => {
+                        $('#continue').show();
+                    });
                 }
 
             } else {
@@ -65,6 +71,10 @@ $('.wall-btn').on('click', function () {
         })
     }
 
+})
+
+$('#continue').on('click', function () {
+    window.location.href = "missing-vowels.html";
 })
 
 function changeColour(n) {

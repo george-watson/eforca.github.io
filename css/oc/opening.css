@@ -1,0 +1,68 @@
+body {
+    margin: 0px;
+    background-color: #eaf0ed;
+}
+
+#go,
+#continue {
+    position: absolute;
+    margin-inline: auto;
+    width: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20%;
+    padding: 15px 5px;
+
+    border-radius: 3px;
+    color: #012c5d;
+    background-image: linear-gradient(#bae3f9, #88c5f7);
+
+    cursor: pointer;
+}
+
+#go {
+    left: 0;
+    right: 0;
+    top: 40%;
+}
+
+#continue {
+    left: 0;
+    right: 0;
+    top: 2%;
+    z-index: 10;
+
+}
+
+#vcm,
+#blout {
+    top: 0;
+    width: 100%;
+    position: absolute;
+}
+
+#descr {
+    width: 95%;
+    padding: 10px 20px;
+    margin: 10px 0px;
+
+    position: absolute;
+    margin-inline: auto;
+    width: 50%;
+    top: 65%;
+    left: 0;
+    right: 0;
+
+    border-radius: 3px;
+    display: flex;
+    color: #acd8f7;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#03356c, #002452);
+
+    font-size: 2vw;
+    z-index: 10;
+}

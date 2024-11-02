@@ -44,7 +44,6 @@
     flex-wrap: wrap;
     margin: auto;
     width: 760px;
-    font-family: sans-serif;
     font-size: 15pt;
 }
 
@@ -58,11 +57,16 @@
     justify-content: center;
     background-image: linear-gradient(#bae3f9, #a8d5fb);
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 input:checked+.wall-btn {
     color: var(--tile-font-colour);
     background-image: linear-gradient(var(--tile-start-colour), var(--tile-end-colour));
+}
+
+.found {
+    cursor: default;
 }
 
 .found-blue {
@@ -89,4 +93,23 @@ label input {
     position: absolute;
     top: -20px;
     visibility: hidden;
+}
+
+#continue {
+    position: fixed;
+    top: 10%;
+    left: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20%;
+    padding: 15px 5px;
+
+    border-radius: 3px;
+    color: #012c5d;
+    background-image: linear-gradient(#bae3f9, #88c5f7);
+
+    cursor: pointer;
 }
