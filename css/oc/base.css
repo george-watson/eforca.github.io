@@ -2,7 +2,8 @@ html {
     overflow: hidden;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-    font-size: 1.70vw;
+    /* font-size: 1.70vw; */
+    font-size: 1.3rem;
     font-weight: 550;
 
 }

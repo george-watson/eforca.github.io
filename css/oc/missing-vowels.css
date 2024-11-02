@@ -1,0 +1,114 @@
+body {
+    margin: 0px;
+    background-color: #eaf0ed;
+}
+
+#centerDiv {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background-image: url('../../img/oc/vowels-background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#next {
+    width: 60%;
+    padding: 15px 5px;
+    cursor: default;
+    margin-bottom: 10px;
+
+    border-radius: 3px;
+    display: flex;
+    color: #012c5d;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#bae3f9, #88c5f7);
+}
+
+#seeAnswer {
+    width: 60%;
+    padding: 15px 5px;
+    cursor: pointer;
+
+    border-radius: 3px;
+    display: flex;
+    color: #acd8f7;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#03356c, #002452);
+}
+
+#buttonsDiv,
+#questionDiv,
+.question {
+    display: flex;
+    flex-direction: column;
+    margin: 4% 5%;
+    width: 600px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.theme,
+.clue,
+.form__field {
+    width: 80%;
+    padding: 10px 20px;
+}
+
+.theme {
+    margin-bottom: 20px;
+    border-radius: 3px;
+    display: flex;
+    color: #eaf9ff;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#03356c, #002452);
+}
+
+.clue {
+    height: 20px;
+    border-radius: 3px;
+    display: flex;
+    color: #012c5d;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#bae3f9, #88c5f7);
+
+    font-size: larger;
+}
+
+.form__field {
+    width: 80%;
+    border: 0;
+    border-bottom: 2px solid #acd8f7;
+    outline: 0;
+    color: #acd8f7;
+    margin-top: 5px;
+    background: transparent;
+
+    font-size: 1.1rem;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+#vcm {
+    top: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}

@@ -21,7 +21,6 @@ $("#answer").hide();
 var current_tile = 0;
 
 for (let i = 0; i < tiles.length; i++) {
-    // $("#tilesDiv").append('<div class="tileDiv" id="tile' + i + '"><label id="label-' + i + '"><span>1 point<span/><span class="tile">' + tiles[i] + '</span></label></div>');
     $("#tilesDiv").append(
         '<div class="tileDiv" id="tileDiv' + i + '">' +
         '<span class="points" id="points' + i + '">' + points[i] + '</span>' +
