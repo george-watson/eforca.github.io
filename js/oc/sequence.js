@@ -1,8 +1,18 @@
 const clickAudio = new Audio("audio/oc/wallBtnClick.mp3")
+const instructions = new Audio("audio/oc/sequence-eye.mp3")
 
 const tiles = ["553125", '44256', '3327', '224'];
 const points = ["5 points", "3 points", "2 points"];
 const answer = "x to the power of x (with symbols taken out)";
+
+var audio_played = false;
+$('#scene').on("mousemove", function () {
+    if (!audio_played) {
+        instructions.play();
+        audio_played = true;
+    }
+});
+
 
 $("#continue").hide();
 
@@ -52,6 +62,7 @@ $('#seeAnswer').on('click', function () {
 })
 
 $('#continue').on('click', function () {
+    clickAudio.play();
     window.location.href = "wall_choose.html";
 })
 

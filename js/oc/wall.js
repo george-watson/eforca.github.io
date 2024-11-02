@@ -74,6 +74,7 @@ $('.wall-btn').on('click', function () {
 })
 
 $('#continue').on('click', function () {
+    clickAudio.play();
     window.location.href = "missing-vowels.html";
 })
 

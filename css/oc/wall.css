@@ -112,4 +112,5 @@ label input {
     background-image: linear-gradient(#bae3f9, #88c5f7);
 
     cursor: pointer;
+    z-index: 10;
 }

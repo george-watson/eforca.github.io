@@ -1,11 +1,17 @@
 const clickAudio = new Audio("audio/oc/wallBtnClick.mp3")
-const instructions = new Audio("audio/oc/connections_reeds.mp3")
+const instructions = new Audio("audio/oc/connections-reeds.mp3")
 
 const tiles = ["Alternative", 'De', 'The X', '(eg.) Charlie and the Chocolate'];
 const points = ["5 points", "3 points", "2 points", "1 points"];
 const answer = "Phrases missing Fact, Facto, Factor, Factory";
 
-instructions.play();
+var audio_played = false;
+$('#scene').on("mousemove", function () {
+    if (!audio_played) {
+        instructions.play();
+        audio_played = true;
+    }
+});
 
 $("#continue").hide();
 
